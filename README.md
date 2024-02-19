@@ -1,10 +1,10 @@
 # Network Scanner with ARP:
 
- The ARP (Address Resolution Protocol) is the way that networks are able to route information around hosts. This can be key for hackers kooking to identify hosts on a network.
+The ARP (Address Resolution Protocol) is the way that networks are able to route information around hosts. This can be key for hackers looking to identify hosts on a network.
 
  In order for a host device like a computer or smartphone to communicate across a network it needs to manage 2 different types of addresses: the MAC address (electronic number that follows a device around and rarely changes) and the IP address (the address in the network assigned by the router when you first join). Both of these addresses will need to be combined in order to make sure it can be delivered successfully. The ARP has a giant table linking different IP addresses to different MAC addresses ensuring the packets can be delivered to those devices on the network. 
 
-A hacker can take advantage of this by looking into their own ARP cache and seeing devices that have been discovered or run their own ARP scans to discover active hosts on the network.
+A hacker can take advantage of this by looking into their own ARP cache and seeing devices that have been discovered or running their own ARP scans to discover active hosts on the network.
 
 We first check our own ARP cache with arp -a:
 
@@ -30,7 +30,7 @@ we use now wireshark to see the traffic of our IP addresses:
 ![Screenshot 2024-02-19 at 12 01 46](https://github.com/redjules/Network-Scanner/assets/106017493/8fcf1d8e-a99e-403f-9778-fba5c947c57c)
 
 
-we will now use netdiscover using the git repository.
+we will now use netdiscover using the git repository (attached files).
 
 we type man netdiscover:
 
